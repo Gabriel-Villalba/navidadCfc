@@ -4,10 +4,7 @@
 {
 	box-sizing: border-box;
 }
-body
-{
-	
-}
+
 h1{
     color: brown;
 }
@@ -38,7 +35,7 @@ a{
 }
 .instructivo{
     border-style: solid;
-    border-width: 3px;
+    border-width: 2px;
     border-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgb(255, 72, 0), rgba(0, 0, 0, 0)) 1 0; 
     text-align: center;
     font-size: 15px;
@@ -50,6 +47,13 @@ a{
     height: 100%;
     object-fit: cover;
     margin-bottom: .9rem ;
+}
+.negrita{
+    font-weight: bold;
+    color: black;
+}
+.contenido{
+    width: 100%;
 }
 .turno{
     margin-top: 10px;
@@ -122,7 +126,7 @@ footer p{
         line-height: 42px;
     }
     footer p{
-       font-size: 2rem;
+       font-size: 15px;
        font-family:  'Nunito' , sans-serif;
     }
     .link{
