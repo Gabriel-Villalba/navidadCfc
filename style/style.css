@@ -26,7 +26,7 @@ h1{
     justify-content: center;
     padding-top: 5px;
     color: rgb(226, 18, 18);
-    background-color: rgb(125, 173, 237);
+    background-color: rgb(193, 206, 231);
 }
 
 .link{
@@ -38,7 +38,7 @@ h1{
 }
 .turno{
     margin-top: 10px;
-    padding-top: 5%;
+    padding-top: 2%;
     text-align:center;
 }
 .containerLink{
@@ -66,56 +66,38 @@ h1{
     overflow-y: hidden;
 }
 footer{ 
-    background-color: rgb(226, 227, 229);
+    background-color: rgb(193, 206, 231);
     width: 100%;
     height: 90%x;
    
     padding: 0 auto;
-    text-align: center;
+
     padding: 5px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
+
 
 }
 
-footer .redes a{
-    color: rgb(125, 173, 237);
-    display: inline-block;
-    text-decoration: none;
+
+
+footer p{
     text-align: center;
-    border: 1px solid #edd2d2;
-    border-radius: 100%;
-    width: 32px;
-    height: 32px;
-    line-height: 32px;
-    
-    font-size: 20px;
-    transition: .3s;
-}
-footer .arriba{
-    display: block;
-    width: 30px;
-    height: 30px;
-    background-color:rgb(125, 173, 237);
-    color: #fff;
-
-    left: 50%;
-    transform: translateX(-50%);
-    top: -25px;
-    border-radius: 50%;
-    line-height: 50px;
-    font-size: 18px;
-}
-@media screen  and (min-width: 1024px){
+ 
+    font-family:  'Nunito' , sans-serif;
+ }
+@media screen  and (min-width: 768px){
+    .turno{
+        margin-top: 10px;
+        padding-top: auto;
+        text-align:center;
+    }
     footer .redes a{
         width: 42px;
         height: 42px;
         line-height: 42px;
     }
     footer p{
-       font-size: 1rem;
-       font-family: var(--second-font);
+       font-size: 2rem;
+       font-family:  'Nunito' , sans-serif;
     }
+
 }
