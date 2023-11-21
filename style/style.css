@@ -59,12 +59,12 @@ a{
     color: rgb(131, 125, 125);
     padding-top: 2rem;
     font-weight: bold;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 .containerLink a:hover{
    opacity: 1; ;
    color:  rgb(78, 74, 74);
-   transition: all 1s;
+   transition: all 0.5s;
    
 }
 .funciones{
