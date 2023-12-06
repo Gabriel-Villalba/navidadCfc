@@ -56,7 +56,7 @@ a{
 .containerLink{
     width: 100%;
     height: 100px;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 5px;
   
     background-color:  rgb(219, 221, 225);
@@ -65,7 +65,7 @@ a{
 .containerLink a {
     font-size: 1.5rem;
     color: rgb(131, 125, 125);
-    padding-top: 2rem;
+    padding-top: 1rem;
     font-weight: bold;
     transition: all 0.5s;
 }
@@ -130,7 +130,7 @@ footer p{
     .containerLink{
         width: 100%;
         height: 100px;
-        padding-top: 1rem;
+        padding-top: 1.5rem;
         margin: 0;
         border-bottom: solid 5px  white;
         background-color: rgb(219, 221, 225);
