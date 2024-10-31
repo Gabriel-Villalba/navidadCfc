@@ -3,6 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navidad CFC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Combo&family=Mountains+of+Christmas:wght@400;700&family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .navbar {
+          z-index: 50;
+      }
+  </style>
+</head>
+<body>
+    <!-- Navbar -->
+      
+    <nav class="navbar bg-blue-600 text-white sticky top-0 p-4 w-full shadow-nav absolute">
+      <div class="container mx-auto flex justify-between items-center">
+          <a href="/" class="flex items-center">
+              <img src="assets/images/cfcLogo-removebg-preview.png" alt="Logo" class="mr-2 w-10 h-10" />
+              <span class="font-bold text-xl">CFC Rafaela</span>
+          </a>
+          <div class="hidden md:flex space-x-4">
+              <a href="/" class="hover:text-blue-200">Inicio</a>
+              <a href="/#" class="hover:text-blue-200">Eventos</a>
+              <a href="/#" class="hover:text-blue-200">Contacto</a>
+              <a href="/#" class="hover:text-blue-200">Reuniones</a>
+              <a href="/#" class="hover:text-blue-200">Ofrenda</a>
+              <a href="/#" class="hover:text-blue-200">Quiero GV</a>
+              <a href="/#" class="hover:text-blue-200">Cómo llegar</a>
+          </div>
+          <button class="md:hidden" onclick="toggleMenu()">
+              <span id="menu-icon" class="fas fa-bars"></span>
+          </button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden">
+          <div class="flex flex-col items-center space-y-2 mt-4">
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Inicio</a>
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Eventos</a>
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Contacto</a>
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Reuniones</a>
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Ofrenda</a>
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Quiero GV</a>
+              <a href="/#" class="hover:text-blue-200" onclick="toggleMenu()">Cómo llegar</a>
+          </div>
+      </div>
+  </nav>
+
+  <script>
+      function toggleMenu() {
+          const menu = document.getElementById('mobile-menu');
+          const menuIcon = document.getElementById('menu-icon');
+          if (menu.classList.contains('hidden')) {
+              menu.classList.remove('hidden');
+              menuIcon.classList.remove('fa-bars');
+              menuIcon.classList.add('fa-times');
+          } else {
+              menu.classList.add('hidden');
+              menuIcon.classList.remove('fa-times');
+              menuIcon.classList.add('fa-bars');
+          }
+      }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+    <!-- Navbar -->
+    <div class="container mx-auto px-4">
+      <!-- <div class="titulo text-center my-4">
+          <img class="w-full max-w-lg mx-auto" src="/assets/logoCfc.jpg" alt="Agotado">
+      </div> -->
+      <div class="instructivo text-center my-4">
+          <p>Cfc, una iglesia <strong>¡Para toda la familia!</strong></p>
+      </div>
+      <div class="funciones flex flex-col items-center gap-4 my-4">
+          <div class="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
+              <a href="https://forms.gle/b7koKaojcy2o6C339" target="_blank" class="block text-center">Peña de Valientes</a>
+          </div>
+          <div class="containerLink bg-blue-500 text-white p-4 rounded shadow hover:bg-blue-600 w-full max-w-md">
+              <a href="https://forms.gle/tbXyj4y4zVkieudb9" target="_blank" class="block text-center">Conferencia de matrimonios</a>
+          </div>
+      </div>
+  </div>
+  <footer class="bg-gray-800 text-white py-8 mt-4">
+      <div class="container mx-auto px-4">
+          <div class="flex flex-wrap justify-between items-center">
+              <div class="w-full md:w-1/3 text-center md:text-left mb-4 md:mb-0">
+                  <h3 class="text-sm font-semibold mb-2">CFC Rafaela</h3>
+                  <p class="text-xs">Una iglesia para toda la familia</p>
+              </div>
+              <div class="w-full md:w-1/3 text-center mb-4 md:mb-0">
+                  <h4 class="text-sm font-semibold mb-2">Contáctanos</h4>
+                  <p class="text-xs">Avenida Williner 350, Rafaela, Santa Fe</p>
+                  <p class="text-xs">Email: cfcrafaela@gmail.com</p>
+                  <p class="text-xs">Teléfono: (3492) 456-7890</p>
+              </div>
+              <div class="w-full md:w-1/3 text-center md:text-right">
+                  <h4 class="text-sm font-semibold mb-2">Síguenos</h4>
+                  <div class="flex justify-center md:justify-end space-x-4">
+                      <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/cfcrafaela/?hl=es" target="_blank" class="hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                      <a href="https://www.youtube.com/results?search_query=cfc+rafaela" target="_blank" class="hover:text-red-600"><i class="fab fa-youtube"></i></a>
+                  </div>
+              </div>
+          </div>
+        
+      </div>
+  </footer>
+
+  
+         <script src="https://kit.fontawesome.com/749e4d31e7.js" crossorigin="anonymous"></script>
+  
+      /div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/749e4d31e7.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navidad cfc</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/style.css">
@@ -15,7 +140,7 @@
 <body>
   
   <!-- Navbar -->
-  <div class="container">
+  <!-- <div class="container">
     <div class="titulo">
       <img class="baneerPrincipal" src="/assets/agotado.png" >
     </div>
@@ -45,7 +170,7 @@
 
     <div class="carrusel">
                   <!-- seccion carrusel -->
-            <div id="carouselExample" class="carousel slide">
+            <!-- <div id="carouselExample" class="carousel slide">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
                       <img src="assets/images/_MG_1842.jpg" class="d-block w-100" alt="...">
@@ -92,8 +217,7 @@
 
     <!-- Main Content -->
 
-</body>
-
+<!-- </body>
   
 
-</html>
+</html>  -->
